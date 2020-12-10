@@ -1,0 +1,501 @@
+*{margin: 0; padding: 0; border: 0; box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none; color:#000;}
+@font-face{
+    src: url("../font/malgun.ttf");
+    font-family:"malgun";	
+}
+
+body{
+    width: 1920px;
+    overflow-x: hidden;
+    display: block;
+    flex-wrap: wrap;
+    font-family: "malgun";
+}
+#wrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #fff;
+    position: relative;
+}
+
+.slide_bg { 
+    width: 30%; 
+    height: 2000px; 
+    position: fixed; 
+    top:0px; 
+    right:0px; 
+    overflow: hidden;
+    z-index: 99999999;
+    display: none; 
+}
+.slide { 
+    position:absolute; 
+    top:0px; 
+    right:0px; 
+    width:100%; 
+    height: 100%; 
+    background-color:#252525;
+    /* opacity: 0.5;  */
+}
+.slide_close{
+    width: 100%;
+    height: 8%;
+    padding: 6%;
+}
+.close_box{
+    position: relative;
+    width: 92px;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+}
+.close_box span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.close_box span p{
+    position: absolute;
+    color: #fff;
+    bottom: -22px;
+    left: -10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+#home .video_cover{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	overflow:hidden;
+	
+}
+#home .video_cover video{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	width:auto;
+	height:auto;
+	min-width:100%;
+	min-height:100%;
+	z-index:-1;
+}
+.menuCate{
+    width: 100%;
+    padding: 2%;
+    height: 36%;
+}
+.menuCate .subCate{
+    width: 80%;
+    height: 100%;
+    float: left;
+    padding: 0% 9%;
+}
+.menuCate .sns{
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 30% 6%;
+}
+.menuCate .subCate li{
+    width: 100%;
+    height: 20%;
+    line-height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.menuCate .subCate li > span{
+    display: block;
+    color: #fff;
+}
+.menuCate .subCate li a{
+    color: rgba(255, 255, 255, 0.2); 
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 1.5;
+    cursor: pointer;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    background-size: 101% 100%; 
+    background-position: left 0px bottom -40px;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text;
+}
+.menuCate .subCate li a:hover{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 90 240 300' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='800' style='stroke: none; fill: rgb(255,255,255);' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none;'%3E%3C/path%3E%3C/svg%3E");
+    animation: wave 2.5s both ease-out
+}
+@keyframes wave {
+    0% {
+        background-position: left 0px bottom -80px;
+    }
+    100% { 
+        background-position: left 1500px bottom 0px;
+    }
+}
+.menuCate .sns li{
+    width: 100%;
+    height: 25%;
+    margin: 10% 0;
+}
+.menuCate .sns li img{
+    width: 20px;
+    cursor: pointer;
+}
+.menuCate .sns li img:hover{
+    transform: scale(1.2);
+    transition: all 0.6s;
+}
+
+#work{
+    position: relative;
+}
+.insta_txtBox{
+    width: 28%;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    padding: 11% 5%;
+}
+.insta_txtBox h2{
+    font-size: 37px;
+    white-space: nowrap;
+    margin-bottom: 75px;
+    line-height: 1.5;
+    cursor: pointer;
+    color: #4b4b4b;
+}
+.insta_txtBox p{
+    font-size: 28px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: #4b4b4b;
+    font-weight: 700;
+}
+.type::after{
+	content:'';
+	display:inline;
+	animation:blink 4s infinite;
+}
+.type-cursor{
+	/* opacity:0; */
+	display:none;
+}
+
+@keyframes blink{
+	0%{opacity:1;}
+	50%{opacity:0;}
+	100%{opacity:1;}
+	
+}
+.insta_txtBox p:hover{
+    color: #F40009;
+    margin-left: 20px;
+    transition: all 1s;
+}
+.insta_box{
+    width: 72%;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+}
+.insta_box ul{
+    width: 100%;
+    height: 100%;
+}
+.insta_box ul li{
+    width: 25%;
+    height: 33.333%;
+    float: left;
+    overflow: hidden;
+}
+.insta_box ul li img{
+    width: 100%;
+    height: 100%;
+}
+.insta_box ul li:nth-child(1),
+.insta_box ul li:nth-child(2),
+.insta_box ul li:nth-child(3),
+.insta_box ul li:nth-child(5),
+.insta_box ul li:nth-child(6),
+.insta_box ul li:nth-child(7){
+    padding: 0 1px 1px 0;
+}
+.insta_box ul li:nth-child(9),
+.insta_box ul li:nth-child(10),
+    .insta_box ul li:nth-child(11){
+    padding: 0 1px 0px 0;
+}
+.insta_box ul li:nth-child(4),
+.insta_box ul li:nth-child(8){
+    padding: 0 0 1px 0;
+}
+.page2Cover{
+    width: 100%;
+    height: 100%;
+}
+.page2LeftIn{
+    width: 50%; 
+    height: 100%; 
+    float: left; 
+    background-color: #fff;
+}
+.page2RightIn{
+    width: 50%; 
+    height: 100%; 
+    float: right; 
+    background-color: #DDCDB5;
+}
+.page2CoverLeft{
+    width: 100%;
+    height: 100%;
+    padding: 135px 0 135px 240px;
+    overflow: hidden;
+}
+.page2CoverRight{
+    width: 100%;
+    height: 100%;
+    padding: 135px 240px 135px 0px;
+}
+.page2CoverRight .slideTxTCover{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slideTxTCover .TxTBox{
+    position: absolute;
+    bottom: -100%;
+    left: -31px;
+    transform: translateY(50%);
+    width: 80%;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 9px -4px 20px 4px #a7a7a7;
+    padding: 20% 66px;
+}
+.slideBannerCover{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slideBannerCover .Banner{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: -130%;
+}
+.Banner .bennerImg{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+} 
+.bennerImg li{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bennerImg li img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.bennerImg li img.bannerOn{
+    display: block;
+}
+.Banner .bannerViewPager{
+    width: 100%;
+    height: 20%;
+    background-color: #eee;/**/
+    overflow: hidden;
+}
+.bannerViewPager .PagerBox{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.PagerBox ul{
+    width: 275%;/*200*/
+    height: 100%;
+    display: flex;
+    /* overflow-X: scroll; */
+}
+.PagerBox ul li{
+    width: 12.5%;
+    height: 100%;
+    /* display: flex; */
+}
+.PagerBox ul li img{
+    width: 100%;
+    height: 100%;
+}
+.TxTBox ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.TxTBox ul li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.TxTBox h4{
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+.TxTBox h2{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.TxTBox p{
+    line-height: 1.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.TxTBox button{
+    padding: 14px 38px;
+    margin-top: 40px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+.TxTBox button:hover{
+    background-color: #F40009;
+    border: 1px solid #F40009;
+    color: #fff;
+    transition: 0.5s;
+}
+.TxTBox ul li.txtBoxOn{
+    display: block;
+}
+
+.page3Cover{
+    width: 100%;
+    height: 100%;
+    padding: 135px 240px;
+    display: flex;
+}
+.TVcover{
+    width: 75%;
+    height: 100%;
+}
+.TVpagerVideo{
+    width: 25%;
+    height: 100%;
+    padding-left: 20px;
+}
+.TVcover ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.TVcover ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.TVcover ul li.tvON{
+    display: block;
+
+}
+.TVpagerVideo ul{
+    width: 100%;
+    height: 100%;
+}
+.TVpagerVideo ul li{
+    width: 100%;
+    height: 33.33%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.5;
+    background-size: 100% 100%;
+}
+.TVpagerVideo ul li.tvPagerOn{
+    opacity: 1;
+}
+.TVpagerVideo ul li span{
+    width: 100%;
+    height: 20px;
+    background-color: #252525;
+    position: absolute;
+    bottom: 0;
+}
+.TVpagerVideo ul li img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -100%;
+}
+.TVpagerVideo ul li:nth-child(1){
+    padding-bottom: 5px;
+    background-image: url(../img/thumnail-world-of-coca-cola-final.rendition.320.180.png);
+}
+.TVpagerVideo ul li:nth-child(2){
+    background-image: url(../img/gimhae-reservoir-social-1200.rendition.320.180.jpg);
+}
+.TVpagerVideo ul li:nth-child(3){
+    padding-top: 5px;
+    background-image: url(../img/coca-cola-parkbogum-summer-interview-1200.rendition.320.180.png);
+}
+.a2_cover{
+    width: 139px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+section .a2_cover .a2{
+	width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+section .a2_cover .a2 .a2btn{
+    display: block;
+    float: left;
+    margin: 8px;
+    transform: scale(0.8);
+    cursor: pointer;
+    color: #000;
+    line-height: 1rem;
+}
+section .a2_cover .a2 .a2btn .img{
+	display:inilne;
+}
+.num1{font-size: 30px; color:#F40009}
+
+#m_wrap{
+    display: none;
+}

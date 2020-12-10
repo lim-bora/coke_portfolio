@@ -1,0 +1,153 @@
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+    .menuCate{
+        padding: 2%;
+        height: 37%;
+    }
+    .menuCate .subCate{
+        width: 80%;
+        height: 100%;
+        float: left;
+        padding: 5% 9%;
+    }
+    .menuCate .subCate li {
+        height: 21%;
+    }
+    .menuCate .sns {
+        padding: 30% 6% 10%;
+    }
+}
+@media screen and (min-width: 1501px) and (max-width: 1699px) {
+    .menuCate{
+        padding: 2%;
+        height: 37%;
+    }
+    .menuCate .subCate{
+        width: 80%;
+        height: 100%;
+        float: left;
+        padding: 5% 9%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+    
+    .page2CoverLeft {
+        padding: 135px 0 135px 200px;
+    }
+    .page2CoverRight {
+        padding: 135px 200px 135px 0px;
+    }
+    .slideTxTCover .TxTBox {
+        width: 90%;
+        height: 636px;
+        padding: 19% 80px;
+    }
+    .TxTBox h2 {
+        font-size: 2.6rem;
+        margin-bottom: 40px;
+    }
+    .TxTBox h4{
+        font-size: 1.7rem;
+    }
+    .TxTBox p {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+    .TxTBox button {
+        padding: 18px 51px;
+        font-size: 18px;
+    }
+    .a2_cover {
+        width: 170px;
+        bottom: 14px;
+    } 
+    section .a2_cover .a2 {
+        width: 170px;
+    }
+    section .a2_cover .a2 .a2btn {
+        margin: 10px;
+        transform: scale(1);
+    }
+    .num2{
+        font-size: 18px;
+    }
+
+    .page3Cover {
+        padding: 135px 161px;
+    }
+    .insta_txtBox {
+        width: 24%;
+    }
+    .insta_box {
+        width: 76%;
+    }
+
+}
+
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
+        .page2CoverLeft {
+            padding: 135px 0 135px 170px;
+        }
+        .page2CoverRight {
+            padding: 135px 170px 135px 0px;
+        }
+        .slideTxTCover .TxTBox {
+            width: 100%;
+            height: 659px;
+        }
+        .slideBannerCover {
+            height: 740px;
+        }
+        .TxTBox h2 {
+            font-size: 3rem;
+        }
+        .TxTBox h4{
+            font-size: 2rem;
+        }
+        .TxTBox p {
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+        }
+        .TxTBox button {
+            padding: 22px 55px;
+            font-size: 20px;
+        }
+        .a2_cover {
+            width: 180px;
+            height: 70px;
+        } 
+        section .a2_cover .a2 {
+            width: 180px;
+            height: 70px;
+        }
+        section .a2_cover .a2 .a2btn {
+            margin: 13px;
+            transform: scale(1.3);
+        }
+        .num2{
+            font-size: 19px;
+            margin: 0 2px;
+        }
+
+        .page3Cover {
+            padding: 210px 161px;
+        }
+        .insta_txtBox {
+            width: 20%;
+        }
+        .insta_box {
+            width: 80%;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
